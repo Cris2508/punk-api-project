@@ -1,0 +1,25 @@
+@use "../../assets/scss/variables" as *;
+
+.beer {
+  margin: 1rem;
+  padding: 1rem;
+  width: 10%;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .beer__image {
+    margin: 1rem;
+    max-width: 10%;
+    min-height: 10%;
+  }
+
+  .beer__name {
+    margin: 1rem;
+  }
+
+  .beer__tagline {
+    margin: 1rem;
+  }
+}
