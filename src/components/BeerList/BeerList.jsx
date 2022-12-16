@@ -4,6 +4,7 @@ import Beer from "../Beer/Beer";
 const BeerList = ({ beersArr, searchTerm }) => {
   const filtredBeerList = beersArr.filter((beer) => {
     const lowerCaseName = beer.name.toLowerCase();
+
     return lowerCaseName.includes(searchTerm);
   });
 

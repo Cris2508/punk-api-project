@@ -3,23 +3,25 @@
 .beer {
   margin: 1rem;
   padding: 1rem;
-  width: 10%;
+  background-color: rgb(96, 96, 96);
+  color: white;
   border-style: solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 20px;
+  align-items: center;
 
-  .beer__image {
+  &__img {
     margin: 1rem;
-    max-width: 10%;
-    min-height: 10%;
+    height: 250px;
   }
 
-  .beer__name {
+  &__name {
     margin: 1rem;
   }
 
-  .beer__tagline {
+  &__tagline {
     margin: 1rem;
   }
 }

@@ -2,11 +2,7 @@ import "./Navbar.scss";
 import SearchBox from "../SearchBox/SearchBox";
 import FiltersList from "../../containers/FiltersList/FiltersList";
 
-const Navbar = ({ searchTerm, setSearchTerm }) => {
-  const handleInput = (event) => {
-    const userInput = event.target.value.toLowerCase();
-    return setSearchTerm(userInput);
-  };
+const Navbar = ({ handleChange, handleInput, searchTerm }) => {
   return (
     <div className="navigation-bar">
       <SearchBox
@@ -14,7 +10,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
         searchTerm={searchTerm}
         handleInput={handleInput}
       />
-      <FiltersList />
+      <FiltersList handleChange={handleChange} />
     </div>
   );
 };

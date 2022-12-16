@@ -2,11 +2,12 @@ import React from "react";
 import "./FilterItem.scss";
 
 const FilterItem = (props) => {
-  const { name } = props;
+  const { name, handleChange } = props;
+
   return (
     <div className="filter-item">
       <p>{name}</p>
-      <input type="checkbox" />
+      <input id={name} type="checkbox" onChange={handleChange} />
     </div>
   );
 };
